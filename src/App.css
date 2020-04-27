@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,600|Cormorant+Garamond:600");
+
+:root {
+  --primaryColor: #7fb687d2;
+  --secondaryColor: #85eb93d2;
+  --primaryRGBA: rgba(0, 0, 0, 0.3);
+  --mainGrey: #ecebeb;
+  --mainOnion: #ecebebd0;
+  --mainShadow: #616161b6;
+  --darkGrey: #5f5e5e;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainOpBlue: rgba(199, 217, 228, 0.99);
+  --secondaryBlue: rgb(184, 202, 213);
+  --mainOpBlack: rgba(39, 40, 41, 0.99);
+  --mainTransition: all 0.3s ease-in-out;
+  --secondaryTransition: all 0.5s ease-in-out;
+  --mainSpacing: 0.2rem;
+}
+.text-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+}
+.text-main {
+  color: var(--primaryColor);
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+  background: var(--mainGrey) !important;
+  color: var(--mainBlack);
+}
+.main-link {
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: inline-block;
+  /* text-transform: uppercase; */
+  letter-spacing: var(--mainSpacing);
+  /* outline: 2px solid var(--primaryColor);
+  outline-offset: 0px; */
+  border: none;
+  transition: var(--mainTransition);
+}
+.main-link:hover {
+  background: var(--secondaryColor);
+  text-decoration: none;
+  color: var(--mainWhite);
+  outline-color: var(--secondaryColor);
+}
+.product-link{
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.product-link:hover{
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+.cart-icon {
+  cursor: pointer;
+}
+
+.spam-catcher{
+  display: none;
+}
