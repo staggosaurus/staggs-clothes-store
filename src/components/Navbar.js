@@ -13,7 +13,7 @@ export default function Navbar() {
           <NavWrapper>
             <div className="nav-center">
               <FaBars className="nav-icon" onClick={handleSidebar} />                    
-              <img src={logo} alt="React Clothes logo" />
+              <img className="nav-logo" src={logo} alt="React Clothes logo" />
               <div className="nav-cart">
                 <TiShoppingCart className="nav-icon" onClick={handleCart} />
                 <div className="cart-items">{cartItems}</div>
@@ -58,5 +58,8 @@ const NavWrapper = styled.nav`
     right: -8px;
     padding: 0 5px;
     border-radius: 50%;
+  }
+  .nav-logo{
+    max-height: 50px;
   }
 `;
