@@ -92,7 +92,7 @@ const ProductWrapper = styled.div`
     padding: 0.5rem;
     color: var(--primaryColor);
     background: var(--mainBlack);
-    border-radius: 3.5rem;
+    border-radius: 50%;
   }
 
   .card:hover .product-icons {

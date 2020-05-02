@@ -53,7 +53,7 @@ export default class Services extends Component {
 }
 
 const ServicesWrapper = styled.section`
-  font-family: "Shadows Into Light";
+  font-family: "Roboto";
   background: var(--mainOpBlue);
   border-top: 1px solid var(--secondaryBlue);
   border-bottom: 1px solid var(--secondaryBlue);
@@ -61,7 +61,7 @@ const ServicesWrapper = styled.section`
     font-size: 2.5rem;
     color: var(--mainWhite);
   }
-  .service-icon svg{
+  .service-icon > svg{
     background: var(--primaryColor);
     border-radius: 50%;
     padding: .32rem;
