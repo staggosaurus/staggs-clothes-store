@@ -29,7 +29,7 @@ export default function SideCart() {
                 );
               })}
             </ul>
-            <h4 className="text-capitalize text-main">
+            <h4 className="text-capitalize text-main-black">
               cart total : ${cartTotal}
             </h4>
             <div className="text-center my-5">
@@ -46,7 +46,7 @@ export default function SideCart() {
 
 const CartWrapper = styled.div`
   position: fixed;
-  top: 83px;
+  top: 76px;
   right: 0;
   width: 100%;
   height: 100%;
@@ -70,5 +70,8 @@ const CartWrapper = styled.div`
   }
   .cart-item {
     list-style-type: none;
+  }
+  .text-main-black{
+    color: var(--mainBlack)
   }
 `;

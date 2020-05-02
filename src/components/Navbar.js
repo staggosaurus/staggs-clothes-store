@@ -60,6 +60,6 @@ const NavWrapper = styled.nav`
     border-radius: 50%;
   }
   .nav-logo{
-    max-height: 50px;
+    max-height: 45px;
   }
 `;

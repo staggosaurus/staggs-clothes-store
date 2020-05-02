@@ -36,11 +36,12 @@ export default class Services extends Component {
               return (
                 <div
                   className="col-10 mx-auto col-sm-6 col-md-4 text-center my-3"
-                  key={item.id}
-                >
-                  <div className="service-icon">{item.icon}</div>
-                  <div className="mt-3 text-capitalize">{item.title}</div>
-                  <div className="mt-3">{item.text}</div>
+                  key={item.id}>
+                  <div className="card px-2 pt-4 pb-5">
+                    <div className="service-icon">{item.icon}</div>
+                    <div className="mt-3 text-capitalize">{item.title}</div>
+                    <div className="mt-3">{item.text}</div>
+                  </div>
                 </div>
               );
             })}
@@ -52,6 +53,7 @@ export default class Services extends Component {
 }
 
 const ServicesWrapper = styled.section`
+  font-family: "Shadows Into Light";
   background: var(--mainOpBlue);
   border-top: 1px solid var(--secondaryBlue);
   border-bottom: 1px solid var(--secondaryBlue);
@@ -59,7 +61,17 @@ const ServicesWrapper = styled.section`
     font-size: 2.5rem;
     color: var(--mainWhite);
   }
+  .service-icon svg{
+    background: var(--primaryColor);
+    border-radius: 50%;
+    padding: .32rem;
+  }
   p {
     color: var(--darkGrey);
+  }
+  .card{
+    background-color: var(--tertiaryBlue);
+    color: var(--mainBlack)
+    border-color: var(--tertiaryBlue)
   }
 `;

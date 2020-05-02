@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,600|Cormorant+Garamond:600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,600|Shadows+Into+Light:600");
 
 :root {
   --primaryColor: #7fb687d2;
@@ -12,6 +12,7 @@
   --mainBlack: #222;
   --mainOpBlue: rgba(199, 217, 228, 0.99);
   --secondaryBlue: rgb(184, 202, 213);
+  --tertiaryBlue: rgb(214, 232, 243);
   --mainOpBlack: rgba(39, 40, 41, 0.99);
   --mainTransition: all 0.3s ease-in-out;
   --secondaryTransition: all 0.5s ease-in-out;

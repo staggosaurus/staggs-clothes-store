@@ -12,14 +12,14 @@ export default function Product({ product }) {
         const { addToCart, setSingleProduct } = value;
 
         return (
-          <ProductWrapper className="col-10 col-sm-8 col-md-6 col-lg-4 my-3">
+          <ProductWrapper className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 my-3 align-items-center">
             <div className="card">
               <div className="img-container ">
                 <img
                   src={product.image}
                   className="card-img-top px-5 pt-4"
                   alt="product"
-                  style={{ maxHeight: "400px", objectFit: "cover" }}
+                  style={{ Height: "400px", objectFit: "cover" }}
                 />
                 <div className="product-icons">
                   <Link
@@ -36,7 +36,6 @@ export default function Product({ product }) {
               </div>
               <div
                 className="card-body d-flex mb-3 justify-content-between align-items-end"
-                style={{}}
               >
                 <Link
                   to={`/products/${product.id}`}
@@ -93,13 +92,20 @@ const ProductWrapper = styled.div`
     padding: 0.5rem;
     color: var(--primaryColor);
     background: var(--mainBlack);
-    border-radius: 0.5rem;
+    border-radius: 3.5rem;
   }
+
   .card:hover .product-icons {
     opacity: .9;
   }
   .card-body {
     font-weight: bold;
     letter-spacing: 2px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .icon {
+      font-size: 2.5rem;
+    }
   }
 `;
