@@ -53,7 +53,7 @@ export default class Services extends Component {
 }
 
 const ServicesWrapper = styled.section`
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background: var(--mainOpBlue);
   border-top: 1px solid var(--secondaryBlue);
   border-bottom: 1px solid var(--secondaryBlue);
