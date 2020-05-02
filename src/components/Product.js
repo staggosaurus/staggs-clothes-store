@@ -103,9 +103,16 @@ const ProductWrapper = styled.div`
     letter-spacing: 2px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .icon {
       font-size: 2.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .icon {
+      font-size: 2rem;
+      margin: .6rem;
     }
   }
 `;
