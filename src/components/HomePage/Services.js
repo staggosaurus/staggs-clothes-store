@@ -37,7 +37,7 @@ export default class Services extends Component {
                 <div
                   className="col-10 mx-auto col-sm-6 col-md-4 text-center my-3"
                   key={item.id}>
-                  <div className="card px-2 pt-4 pb-5">
+                  <div className="card service-card px-3 pt-3 pb-3">
                     <div className="service-icon">{item.icon}</div>
                     <div className="mt-3 text-capitalize">{item.title}</div>
                     <div className="mt-3">{item.text}</div>
@@ -69,7 +69,8 @@ const ServicesWrapper = styled.section`
   p {
     color: var(--darkGrey);
   }
-  .card{
+  .service-card{
+    min-height: 200px;
     background-color: var(--tertiaryBlue);
     color: var(--mainBlack)
     border-color: var(--tertiaryBlue)
