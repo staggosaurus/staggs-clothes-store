@@ -15,12 +15,17 @@ export default function Product({ product }) {
           <ProductWrapper className="col-10 mx-auto col-sm-8 col-md-6 col-lg-4 my-3 align-items-center">
             <div className="card">
               <div className="img-container ">
-                <img
-                  src={product.image}
-                  className="card-img-top px-5 pt-4"
-                  alt="product"
-                  style={{ Height: "400px", objectFit: "cover" }}
-                />
+                <Link
+                      to={`/products/${product.id}`}
+                      onClick={() => setSingleProduct(product.id)}
+                    >
+                  <img
+                    src={product.image}
+                    className="card-img-top px-5 pt-4"
+                    alt="product"
+                    style={{ Height: "400px", objectFit: "cover" }}
+                  />
+                </Link>
                 <div className="product-icons">
                   <Link
                     to={`/products/${product.id}`}
@@ -62,10 +67,10 @@ const ProductWrapper = styled.div`
   }
   .card:hover {
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
   }
   .card-img-top {
     transition: var(--mainTransition);
+    cursor: pointer;
   }
   .card:hover .card-img-top {
     transform: scale(1.04);
@@ -83,6 +88,7 @@ const ProductWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
     opacity: 0;
   }
   
