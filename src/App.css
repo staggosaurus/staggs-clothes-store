@@ -29,7 +29,7 @@
 }
 body {
   font-family: "Roboto", sans-serif !important;
-  background: var(--mainGrey) !important;
+  background: var(--mainWhite) !important;
   color: var(--mainBlack);
 }
 .main-link {
