@@ -45,8 +45,9 @@ const SideWrapper = styled.nav`
     0px 0 0px -0px var(--mainShadow), 
     4px 4px 4px -2px var(--mainShadow);
   /* border-right: 2px solid var(--primaryColor); */
+  opacity: ${props => (props.show ? "1" : "0")};
   transition: var(--secondaryTransition);
-  transform: ${props => (props.show ? "translateY(0)" : "translateY(-150%)")};
+  transform: ${props => (props.show ? "translateX(0)" : "translateX(-150%)")};
   ul {
     list-style-type: none;
     padding: 0 !important;

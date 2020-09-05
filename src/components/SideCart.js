@@ -52,13 +52,15 @@ const CartWrapper = styled.div`
   height: 100%;
   background: var(--mainOnion);
   z-index: 1;
-  transform: ${props => (props.show ? "translateX(0)" : "translateX(150%)")};
+
   box-shadow: 
     0 0px white,
     0 0px white, 
     0px 0 0px -0px var(--mainShadow), 
     -4px 0 4px -2px var(--mainShadow);
   /* border-left: 2px solid var(--primaryColor); */
+  opacity: ${props => (props.show ? "1" : "0")}; 
+  transform: ${props => (props.show ? "translateX(0)" : "translateX(150%)")};
   transition: var(--secondaryTransition);
   @media (min-width: 576px) {
     width: 20rem;
