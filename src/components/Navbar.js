@@ -32,7 +32,7 @@ const NavWrapper = styled.nav`
     top: 0;
     width: 100%;
     padding: 1rem 1.5rem;
-    background: var(--mainWhite);
+    background: var(--secondaryWhite);
     border-bottom: 1px solid var(--secondaryBlue);
     z-index: 2;
     .nav-center {

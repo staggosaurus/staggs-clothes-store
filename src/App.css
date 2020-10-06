@@ -9,7 +9,7 @@
     --mainShadow: #616161b6;
     --darkGrey: #5f5e5e;
     --mainWhite: #fff;
-    --secondaryWhite: #f5f5f5;
+    --secondaryWhite: #fafafa;
     --mainBlack: #222;
     --mainOpBlue: rgba(199, 217, 228, 0.99);
     --secondaryBlue: rgb(184, 202, 213);
@@ -66,4 +66,8 @@ body {
 
 .spam-catcher {
     display: none;
+}
+
+.card {
+    background: var(--secondaryWhite);
 }

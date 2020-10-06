@@ -23,7 +23,7 @@ export default function Footer() {
 }
 
 const FooterWrapper = styled.footer`
-    background: var(--mainWhite);
+    background: var(--secondaryWhite);
     color: var(--mainBlack);
     border-top: 1px solid var(--secondaryBlue);
     .icon {

@@ -66,7 +66,7 @@ const ServicesWrapper = styled.section`
   }
   .service-card{
     min-height: 200px;
-    background-color: var(--mainWhite);
+    background-color: var(--secondaryWhite);
     color: var(--mainBlack)
     border-color: var(--tertiaryBlue)
   }
