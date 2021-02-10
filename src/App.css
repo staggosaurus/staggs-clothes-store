@@ -9,7 +9,7 @@
     --mainShadow: #616161b6;
     --darkGrey: #5f5e5e;
     --mainWhite: #fff;
-    --secondaryWhite: #fafafa;
+    --secondaryWhite: rgba(250, 250, 250, 1);
     --mainBlack: #222;
     --mainOpBlue: rgba(199, 217, 228, 0.99);
     --secondaryBlue: rgb(184, 202, 213);

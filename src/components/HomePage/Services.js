@@ -48,26 +48,28 @@ export default class Services extends Component {
 }
 
 const ServicesWrapper = styled.section`
-  font-family: "Roboto", sans-serif;
-  background: var(--mainOpBlue);
-  border-top: 1px solid var(--secondaryBlue);
-  border-bottom: 1px solid var(--secondaryBlue);
-  .service-icon {
-    font-size: 2.5rem;
-    color: var(--mainWhite);
-  }
-  .service-icon > svg{
-    background: var(--primaryColor);
-    border-radius: 50%;
-    padding: .32rem;
-  }
-  p {
-    color: var(--darkGrey);
-  }
-  .service-card{
-    min-height: 200px;
-    background-color: var(--secondaryWhite);
-    color: var(--mainBlack)
-    border-color: var(--tertiaryBlue)
-  }
+    font-family: "Roboto", sans-serif;
+    background: var(--mainOpBlue);
+    border-top: 1px solid var(--secondaryBlue);
+    border-bottom: 1px solid var(--secondaryBlue);
+    .service-icon {
+        font-size: 2.5rem;
+        color: var(--mainWhite);
+    }
+    .service-icon > svg {
+        background: var(--primaryColor);
+        border-radius: 50%;
+        padding: 0.32rem;
+    }
+    p {
+        color: var(--darkGrey);
+    }
+    .service-card {
+        min-height: 200px;
+        background-color: var(--secondaryWhite);
+        color: var(--mainBlack);
+        border-color: var(--tertiaryBlue);
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+        /* border-radius: 10px; */
+    }
 `;
